@@ -1,6 +1,6 @@
 import React from 'react'
 import { Nav,Navbar,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
-import { propTypes } from 'react-bootstrap/esm/Image'
+import PropTypes from 'prop-types'
 
 const Header = (props) => {
   return (
@@ -35,7 +35,7 @@ Header.defaultProps = {
 }
 
 Header.propTypes = {
-  title: propTypes.string
+  title: PropTypes.string
 }
 
 export default Header
