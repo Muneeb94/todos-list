@@ -1,11 +1,12 @@
 import React from 'react'
 import { Nav,Navbar,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
+import { propTypes } from 'react-bootstrap/esm/Image'
 
-function Header() {
+const Header = (props) => {
   return (
     <div>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">{props.title}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -27,6 +28,14 @@ function Header() {
         </Navbar>
     </div>
   )
+}
+
+Header.defaultProps = {
+  title: "Your Title Here"
+}
+
+Header.propTypes = {
+  title: propTypes.string
 }
 
 export default Header
