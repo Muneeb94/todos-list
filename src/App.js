@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 
 function App() {
-   const todo = [
+   const todoItem = [
     {
       sno: 1,
       title: "Go to the market",
@@ -26,7 +26,7 @@ function App() {
   return (
     <div>
         <Header title="My ToDo List"/>
-        <Todos  todos={todo}/>
+        <Todos  todoItems = {todoItem}/>
         <Footer />
     </div>
   );
