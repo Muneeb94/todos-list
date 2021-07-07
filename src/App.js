@@ -8,7 +8,6 @@ import React, { useState } from 'react';
 
 
 function App() {
-
     const onDelete = (todo) => {
       setTodoItem(todoItem.filter((e) =>{
         console.log(e);
